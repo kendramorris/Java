@@ -1,28 +1,19 @@
-// Assignment.java
-// Demonstrates loops and nested loops for matrix display
-
-public class Assignment {
+public class Assignment3 {
     public static void main(String[] args) {
-
-        // -------------------------
-        // 1. Display ODD numbers from 100 to 200
-        System.out.println("1. Odd numbers from 100 to 200:");
-        for (int i = 101; i <= 200; i += 2) {
-            System.out.print(i + " ");
+        for (int i = 100; i <= 200; i++) {
+            if (i % 2 != 0) {
+                System.out.print(i + " ");
+            }
         }
         System.out.println("\n");
 
-        // -------------------------
-        // 2. Adjust previous loop to count by five
-        System.out.println("2. Numbers from 100 to 200 counting by 5:");
         for (int i = 100; i <= 200; i += 5) {
-            System.out.print(i + " ");
+            if (i % 2 != 0) {
+                System.out.print(i + " ");
+            }
         }
         System.out.println("\n");
 
-        // -------------------------
-        // 3. Display matrix of stars
-        System.out.println("3. Matrix of *:");
         for (int row = 1; row <= 4; row++) {
             for (int col = 1; col <= 5; col++) {
                 System.out.print("* ");
@@ -31,9 +22,6 @@ public class Assignment {
         }
         System.out.println();
 
-        // -------------------------
-        // 4. Display matrix of numbers 5 4 3 2 1
-        System.out.println("4. Matrix of 5 4 3 2 1:");
         for (int row = 1; row <= 3; row++) {
             for (int col = 5; col >= 1; col--) {
                 System.out.print(col + " ");
@@ -42,9 +30,6 @@ public class Assignment {
         }
         System.out.println();
 
-        // -------------------------
-        // 5. Display matrix of numbers 8 7 6 5 4 3
-        System.out.println("5. Matrix of 8 7 6 5 4 3:");
         for (int row = 1; row <= 2; row++) {
             for (int col = 8; col >= 3; col--) {
                 System.out.print(col + " ");
@@ -53,12 +38,15 @@ public class Assignment {
         }
         System.out.println();
 
-        // -------------------------
-        // 6. Display matrix with row numbers repeating
-        System.out.println("6. Matrix with repeating row numbers:");
         for (int row = 5; row >= 2; row--) {
             for (int col = 1; col <= 6; col++) {
                 System.out.print(row + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+
             }
             System.out.println();
         }
