@@ -1,0 +1,48 @@
+public class Assignment3 {
+    public static void main(String[] args) {
+        for (int i = 100; i <= 200; i++) {
+            if (i % 2 != 0) {
+                System.out.print(i + " ");
+            }
+        }
+        System.out.println("\n");
+
+        for (int i = 100; i <= 200; i += 5) {
+            if (i % 2 != 0) {
+                System.out.print(i + " ");
+            }
+        }
+        System.out.println("\n");
+
+        for (int row = 1; row <= 4; row++) {
+            for (int col = 1; col <= 5; col++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        System.out.println();
+
+        for (int row = 1; row <= 3; row++) {
+            for (int col = 5; col >= 1; col--) {
+                System.out.print(col + " ");
+            }
+            System.out.println();
+        }
+        System.out.println();
+
+        for (int row = 1; row <= 2; row++) {
+            for (int col = 8; col >= 3; col--) {
+                System.out.print(col + " ");
+            }
+            System.out.println();
+        }
+        System.out.println();
+
+        for (int row = 5; row >= 2; row--) {
+            for (int col = 1; col <= 6; col++) {
+                System.out.print(row + " ");
+            }
+            System.out.println();
+        }
+    }
+}
